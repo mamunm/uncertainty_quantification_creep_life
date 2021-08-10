@@ -16,8 +16,7 @@ sns.set_palette('mako')
 # colors = plt.rcParams['axes.prop_cycle'].by_key()['color']
 
 def coverage(y, yL, yH):
-     return (100 / y.shape[0] *
-             ((y>yL)&(y<yH)).sum())
+    return (100 / y.shape[0] * ((y>yL)&(y<yH)).sum())
 
 # df_train = pd.read_csv(Path(__file__).resolve().parent / "qr_predictions_train.csv")
 # df_test = pd.read_csv(Path(__file__).resolve().parent / "qr_predictions_test.csv
